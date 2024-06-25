@@ -1,0 +1,26 @@
+{
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.rulers": [
+            100
+        ]
+    },
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "isort.args": [
+        "--force-single-line",
+        "--lines-between-types=1",
+        "--force-alphabetical-sort-within-sections",
+        "--line-length=100"
+    ],
+    "ruff.args": [
+        "--line-length=100",
+        "--isolated",
+        "--extend-select=D403"
+    ],
+    "ruff.organizeImports": false,
+}
